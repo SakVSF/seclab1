@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
  
+
+
 void vulnerable(char* ip) {
     char buf[20];
     strcpy(buf, ip);
 
 }
- 
-void win(){
+ void win(){
 printf("You successfully exploited the buffer overflow\n");
 system("/bin/sh");
 }
